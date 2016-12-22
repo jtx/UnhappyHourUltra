@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Unhappy Hour Fantasy Football Finals</title>
+        <link href="/css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="content">
+            <table class="team_header">
+                <tr>
+                    <td class="team_header_player_image">
+                        <span class="team_header_name">
+                            Team {{ teamAdditional.0.name }}
+                        </span>
+                    </td>
+                    <td class="team_header_vs_image">
+                        &nbsp;
+                    </td>
+                    <td class="team_header_player_image">
+                        <span class="team_header_name">
+                            Team {{ teamAdditional.1.name }}
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="team_header_player_image">
+                        <img src="/images/{{ teamAdditional.0.icon }}" class="player_image" />
+                    </td>
+                    <td class="team_header_vs_image">
+                        <img src="/images/vs.png" class="vs_image" />
+                    </td>
+                    <td class="team_header_player_image">
+                        <img src="/images/{{ teamAdditional.1.icon }}" class="player_image" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="scores">
+                        SCORES
+                    </td>
+                </tr>
+                <tr class="table_scores">
+                    <td class="team_header_player_image">
+                        <span class="team_header_name team_header_scores {% if teamAdditional.0.score > teamAdditional.1.score %}team_header_scores_winning{% elseif teamAdditional.0.score < teamAdditional.1.score %}team_header_scores_losing{% endif %}">
+                            {{ teamAdditional.0.score }}
+                        </span>
+                    </td>
+                    <td class="team_header_vs_image">
+                        &nbsp;
+                    </td>
+                    <td class="team_header_player_image">
+                        <span class="team_header_name team_header_scores {% if teamAdditional.1.score > teamAdditional.0.score %}team_header_scores_winning{% elseif teamAdditional.1.score < teamAdditional.0.score %}team_header_scores_losing{% endif %}">
+                            {{ teamAdditional.1.score }}
+                        </span>
+                    </td>
+                </tr>
+
+                <div class="clear"></div>
+            {% for team in teams %}
+                <table class="team_table">
+                    <tr>
+                        <td colspan="5"  class="team_name_header">
+                            Team {% if loop.index == 1 %}{{ teamAdditional.0.name }} {% elseif loop.index == 2 %}{{ teamAdditional.1.name }} {% endif %} Box Score
+                        </td>
+                    </tr>
+                    <tr class="team_position_row">
+                        <td>
+                            SLOT
+                        </td>
+                        <td>
+                            PLAYER, TEAM POS
+                        </td>
+                        <td>
+                            OPP
+                        </td>
+                        <td>
+                            STATUS ET
+                        </td>
+                        <td>
+                            PTS
+                        </td>
+                    </tr>
+                    {% for row in team %}
+                        <tr class="player_row {% if loop.index is divisibleby(2) %}table_scores_even{% else %}table_scores_odd{% endif %}">
+                            {% for column in row %}
+                                <td class="player_column">{{ column }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    <tr class="bold_totals">
+                        <td colspan="4" class="total_column">
+                            Total:
+                        </td>
+                        <td>
+                            {% if loop.index == 1 %}{{ teamAdditional.0.score }} {% elseif loop.index == 2 %}{{ teamAdditional.1.score }} {% endif %}
+                        </td>
+                </table>
+                <div class="clear"></div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
