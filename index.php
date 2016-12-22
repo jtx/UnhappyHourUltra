@@ -1,6 +1,6 @@
 <?php
 
-require_once('UnhappyHour/UnhappyHour.php');
+require_once('UnhappyHour/FetchDOM.php');
 
 $teams = [
     [
@@ -15,4 +15,4 @@ $teams = [
     ]
 ];
 
-echo UnhappyHour::getHTML($teams[0]['url']);
+echo FetchDOM::getHTML($teams[0]['url']);
