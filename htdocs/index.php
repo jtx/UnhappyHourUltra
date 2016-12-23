@@ -21,7 +21,12 @@ try {
     $teamAdditional = [];
 
     foreach ($settings as $key => $teamSettings) {
-        $teams[] = $parser->parseTeam($teamSettings);
+        $team = $parser->parseTeam($teamSettings);
+        // First 2 lines... we don't want
+        array_shift($team);
+        array_shift($team);
+        $teams[] = $parser->parseTeam($team);
+
         $teamAdditional[$key]['name'] = $teamSettings->getName();
     }
 
@@ -36,12 +41,6 @@ try {
             }
         }
         $teamAdditional[$key]['score'] = $tmpScore;
-    }
-
-    foreach ($teams as $team) {
-        for ($i = 0; $i < 3; $i++) {
-            array_shift($team);
-        }
     }
 
     echo $twig->render('index.twig', ['teams' => $teams, 'teamAdditional' => $teamAdditional]);
