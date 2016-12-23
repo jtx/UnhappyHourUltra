@@ -9,8 +9,9 @@ body {
 }
 
 .team_table {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .player_row {
@@ -18,6 +19,6 @@ body {
 }
 
 .player_column {
-    width: 20%;
+    width: 15%;
     text-align: left;
 }
