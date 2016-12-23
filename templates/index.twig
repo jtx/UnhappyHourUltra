@@ -38,7 +38,7 @@
                         SCORES
                     </td>
                 </tr>
-                <tr>
+                <tr class="table_scores">
                     <td class="team_header_player_image">
                         <span class="team_header_name team_header_scores">
                             {{ teamAdditional.0.score }}
@@ -58,7 +58,7 @@
             {% for team in teams %}
                 <table class="team_table">
                     {% for row in team %}
-                        <tr class="player_row">
+                        <tr class="player_row {% if loop.index is divisibleby(2) %}table_scores_even{% else %}table_scores_odd{% endif %}">
                             {% for column in row %}
                                 <td class="player_column">{{ column }}</td>
                             {% endfor %}
