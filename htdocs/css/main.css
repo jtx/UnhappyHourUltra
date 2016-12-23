@@ -29,6 +29,11 @@ body {
     font-size: 24px;
 }
 
+.team_header_scores {
+    font-size: 36px;
+    color: red;
+}
+
 .player_image {
     max-height: 250px;
 }
@@ -36,6 +41,12 @@ body {
 .vs_image {
     max-height: 75px;
 }
+
+.scores {
+    font-weight: bold;
+    font-size: 24px;
+}
+
 
 .subrow {
     width: 33%;
