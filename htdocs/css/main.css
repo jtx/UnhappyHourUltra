@@ -86,3 +86,7 @@ body {
     width: 15%;
     text-align: left;
 }
+
+.bold_totals {
+    font-weight: bold;
+}
