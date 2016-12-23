@@ -19,4 +19,5 @@ body {
 
 .player_column {
     width: 20%;
+    text-align: left;
 }
