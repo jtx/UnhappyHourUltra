@@ -4,16 +4,16 @@ body {
     color: #000;
 }
 
-div #content {
+#content {
     width: 100%;
 }
 
-div #content .subrow {
+.subrow {
     width: 33%;
     text-align: center;
 }
 
-div #content .clear {
+.clear {
     margin-bottom: 20px;
 }
 
