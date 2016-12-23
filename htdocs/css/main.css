@@ -4,8 +4,17 @@ body {
     color: #000;
 }
 
-#content {
+div #content {
     width: 100%;
+}
+
+div #content .subrow {
+    width: 33%;
+    text-align: center;
+}
+
+div #content .clear {
+    margin-bottom: 20px;
 }
 
 .team_table {
