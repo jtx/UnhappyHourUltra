@@ -22,9 +22,8 @@ try {
 
     foreach ($settings as $key => $teamSettings) {
         $team = $parser->parseTeam($teamSettings);
-        // First 2 lines... we don't want
-        array_shift($team);
-        array_shift($team);
+        // First 3 lines... we don't want
+        array_splice($team, -9);
         $teams[] = $team;
 
         $teamAdditional[$key]['name'] = $teamSettings->getName();
