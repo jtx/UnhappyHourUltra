@@ -46,11 +46,10 @@ class Parser
         $domElement = $dom->getElementById("playertable_{$boxPosition}");
         $players = $domElement->getElementsByTagName('tr');
 
-        /** @var DOMElement $playerRow */
+        /** @var DOMNodeList $players */
         for ($i = 0; $i < $players->length; $i++) {
             $res[$i] = [];
-            /** @var DOMDocument[] $players */
-            $columns = $players[$i]->getElementsByTagName('td');
+            $columns = $players->item($i)->getElementsByTagName('td');
             /** @var DOMElement $column */
             foreach ($columns as $column) {
                 $res[$i][] = $column->nodeValue;
