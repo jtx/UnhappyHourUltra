@@ -17,7 +17,7 @@ try {
 //        print_r($parser->parseTeam($teamSettings));
     }
 
-    $twig->render('index.twig');
+    echo $twig->render('index.twig');
 } catch(Exception $e) {
     sprintf("Well, the site appears dead: %s", $e->getMessage());
 }
