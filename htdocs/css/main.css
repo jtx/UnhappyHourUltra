@@ -12,3 +12,11 @@ body {
 .team_table {
     width: 75%;
 }
+
+.player_row {
+    width: 100%;
+}
+
+.player_column {
+    width: 20%;
+}
