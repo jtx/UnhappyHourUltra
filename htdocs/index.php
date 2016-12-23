@@ -38,6 +38,12 @@ try {
         $teamAdditional[$key]['score'] = $tmpScore;
     }
 
+    foreach ($teams as $team) {
+        for ($i = 0; $i < 3; $i++) {
+            array_shift($team);
+        }
+    }
+
     echo $twig->render('index.twig', ['teams' => $teams, 'teamAdditional' => $teamAdditional]);
 
 } catch(Exception $e) {
