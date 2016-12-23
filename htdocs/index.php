@@ -28,6 +28,7 @@ try {
         $teams[] = $team;
 
         $teamAdditional[$key]['name'] = $teamSettings->getName();
+        $teamAdditional[$key]['icon'] = $teamSettings->getIcon();
     }
 
     foreach ($teams as $key => $players) {

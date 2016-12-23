@@ -18,6 +18,11 @@ class Settings
     private $boxPosition;
 
     /**
+     * @var string
+     */
+    private $icon;
+
+    /**
      * @return string
      */
     public function getName()
@@ -70,6 +75,25 @@ class Settings
     public function setBoxPosition($boxPosition)
     {
         $this->boxPosition = $boxPosition;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIcon()
+    {
+        return $this->icon;
+    }
+
+    /**
+     * @param string $icon
+     * @return $this
+     */
+    public function setIcon($icon)
+    {
+        $this->icon = $icon;
 
         return $this;
     }

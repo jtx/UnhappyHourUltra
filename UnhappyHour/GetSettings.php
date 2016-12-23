@@ -22,7 +22,8 @@ class GetSettings
             $settings = new Settings();
             $settings->setName($iniValue['name'])
                 ->setUrl($iniValue['url'])
-                ->setBoxPosition($iniValue['boxPosition']);
+                ->setBoxPosition($iniValue['boxPosition'])
+                ->setIcon($iniValue['icon']);
 
             $iniArr[] = $settings;
         }
