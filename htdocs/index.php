@@ -25,7 +25,7 @@ try {
         // First 2 lines... we don't want
         array_shift($team);
         array_shift($team);
-        $teams[] = $parser->parseTeam($team);
+        $teams[] = $team;
 
         $teamAdditional[$key]['name'] = $teamSettings->getName();
     }
