@@ -6,27 +6,27 @@
     </head>
     <body>
         <div id="content">
-            <div style="text-align: center; width: 100%;">
-                <span>
-                    <img src="/images/Zangiefclean.png" class="player_image" />
-                </span>
-                <span>
-                    <img src="/images/vs.png" class="vs_image" />
-                </span>
-                <span>
-                    <img src="/images/Dhalsimclean.png" class="player_image" />
-                </span>
-            </div>
-            <div style="text-align: center; width: 100%">
-                <span>
-                    {{ teamAdditional.0.name }}
-                </span>
-                <span>&nbsp;</span>
-                <span>
-                    {{ teamAdditional.1.name }}
-                </span>
+            <table>
+                <tr>
+                    <td>
+                        <img src="/images/Zangiefclean.png" class="player_image" />
+                    </td>
+                    <td>
+                        <img src="/images/vs.png" class="vs_image" />
+                    </td>
+                    <td>
+                        <img src="/images/Dhalsimclean.png" class="player_image" />
+                    </td>
+                </tr>
+            {#<div style="text-align: center; width: 100%">#}
+                {#<span>#}
+                    {#{{ teamAdditional.0.name }}#}
+                {#</span>#}
+                {#<span>&nbsp;</span>#}
+                {#<span>#}
+                    {#{{ teamAdditional.1.name }}#}
+                {#</span>#}
 
-            </div>
             <div class="clear"></div>
             {% for team in teams %}
                 <table class="team_table">
