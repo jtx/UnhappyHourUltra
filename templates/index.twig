@@ -48,7 +48,7 @@
                         &nbsp;
                     </td>
                     <td class="team_header_player_image">
-                        <span class="team_header_name team_header_scores {% if teamAdditional.0.score > teamAdditional.1.score %}team_header_scores_winning{% elseif teamAdditional.0.score < teamAdditional.1.score %}team_header_scores_losing{% endif %}">
+                        <span class="team_header_name team_header_scores {% if teamAdditional.1.score > teamAdditional.0.score %}team_header_scores_winning{% elseif teamAdditional.1.score < teamAdditional.0.score %}team_header_scores_losing{% endif %}">
                             {{ teamAdditional.1.score }}
                         </span>
                     </td>
