@@ -11,7 +11,7 @@ body {
 
 .team_header {
     text-align: center;
-    width: 75%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,9 +44,8 @@ body {
 
 .scores {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
 }
-
 
 .subrow {
     width: 33%;
