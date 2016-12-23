@@ -4,6 +4,11 @@ body {
     color: #000;
 }
 
+.content {
+    text-align: center;
+    width: 100%;
+}
+
 .team_table {
-    width: 10%;
+    width: 75%;
 }
