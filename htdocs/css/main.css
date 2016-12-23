@@ -98,10 +98,12 @@ body {
     background-color: #1d7225;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
-    font-size: 14px;
 }
 
 .team_position_row {
     background-color: #1d7225;
-    color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
 }
