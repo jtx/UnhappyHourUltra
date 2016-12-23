@@ -4,6 +4,22 @@
     <title>The Unhappy Hour Fantasy Football Finals</title>
 </head>
 <body>
-Hello
+<table width="75%">
+    <tr width="100%">
+    {% for team in teams %}
+        <td width="50%">
+            <table width="100%">
+                {% for row in team %}
+                    <tr>
+                        {% for column in row %}
+                            <td>{{ column }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+        </td>
+    {% endfor %}
+    </tr>
+</table>
 </body>
 </html>

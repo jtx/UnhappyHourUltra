@@ -13,11 +13,13 @@ try {
     $settings = GetSettings::parseIni($iniFile);
     $parser = new Parser();
 
+    $teams = [];
+
     foreach ($settings as $teamSettings) {
-        print_r($parser->parseTeam($teamSettings));
+        $teams[] = $parser->parseTeam($teamSettings);
     }
 
-    echo $twig->render('index.twig');
+    echo $twig->render('index.twig', ['teams' => $teams]);
 } catch(Exception $e) {
     sprintf("Well, the site appears dead: %s", $e->getMessage());
 }
