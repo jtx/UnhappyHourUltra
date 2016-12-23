@@ -9,11 +9,20 @@ body {
     width: 100%;
 }
 
+#content span {
+    width: 33%;
+}
+
+#content #header {
+    text-align: center;
+    width: 100%;
+}
+
 .player_image {
     max-height: 250px;
 }
 
-.vs_images {
+.vs_image {
     max-height: 75px;
 }
 
