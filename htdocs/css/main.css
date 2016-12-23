@@ -13,6 +13,10 @@ body {
     max-height: 250px;
 }
 
+.vs_images {
+    max-height: 75px;
+}
+
 .subrow {
     width: 33%;
     text-align: center;
