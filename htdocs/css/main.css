@@ -96,8 +96,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     background-color: #1d7225;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    border-radius: 10px 10px 0px 0px;
     padding: 10px;
     font-size: 14px;
 }
