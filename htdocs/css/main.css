@@ -52,6 +52,7 @@ body {
 
 .player_image {
     max-height: 250px;
+    max-width: 225px;
 }
 
 .vs_image {
