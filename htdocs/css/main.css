@@ -100,3 +100,8 @@ body {
     padding: 5px;
     font-size: 14px;
 }
+
+.team_position_row {
+    background-color: #1d7225;
+    color: #fff;
+}

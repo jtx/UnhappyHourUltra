@@ -62,6 +62,23 @@
                             Team {% if loop.index == 1 %}{{ teamAdditional.0.name }} {% elseif loop.index == 2 %}{{ teamAdditional.1.name }} {% endif %} Box Score
                         </td>
                     </tr>
+                    <tr class="team_position_row">
+                        <td>
+                            SLOT
+                        </td>
+                        <td>
+                            PLAYER, TEAM POS
+                        </td>
+                        <td>
+                            OPP
+                        </td>
+                        <td>
+                            STATUS ET
+                        </td>
+                        <td>
+                            PTS
+                        </td>
+                    </tr>
                     {% for row in team %}
                         <tr class="player_row {% if loop.index is divisibleby(2) %}table_scores_even{% else %}table_scores_odd{% endif %}">
                             {% for column in row %}
