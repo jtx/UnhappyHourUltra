@@ -14,7 +14,7 @@ try {
     $parser = new Parser();
 
     foreach ($settings as $teamSettings) {
-//        print_r($parser->parseTeam($teamSettings));
+        print_r($parser->parseTeam($teamSettings));
     }
 
     echo $twig->render('index.twig');
