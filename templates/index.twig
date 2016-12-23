@@ -6,13 +6,12 @@
     </head>
     <body>
         <div id="content">
-
             {% for team in teams %}
-                <table width="100%">
+                <table class="team_table">
                     {% for row in team %}
-                        <tr>
+                        <tr class="player_row">
                             {% for column in row %}
-                                <td>{{ column }}</td>
+                                <td class="player_column">{{ column }}</td>
                             {% endfor %}
                         </tr>
                     {% endfor %}
