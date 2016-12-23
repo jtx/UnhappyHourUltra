@@ -57,7 +57,7 @@
                 <div class="clear"></div>
             {% for team in teams %}
                 <table class="team_table">
-                    <tr>
+                    <tr class="team_name_header">
                         <td colspan="5">
                             Team {% if loop.index == 1 %}{{ teamAdditional.0.name }} {% elseif loop.index == 2 %}{{ teamAdditional.1.name }} {% endif %} Box Score
                         </td>

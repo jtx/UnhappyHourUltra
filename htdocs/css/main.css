@@ -90,3 +90,10 @@ body {
 .bold_totals {
     font-weight: bold;
 }
+
+.team_name_header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1d7225;
+}
