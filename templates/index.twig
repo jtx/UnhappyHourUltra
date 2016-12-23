@@ -9,17 +9,6 @@
             <table class="team_header">
                 <tr>
                     <td class="team_header_player_image">
-                        <img src="/images/Zangiefclean.png" class="player_image" />
-                    </td>
-                    <td class="team_header_vs_image">
-                        <img src="/images/vs.png" class="vs_image" />
-                    </td>
-                    <td class="team_header_player_image">
-                        <img src="/images/Dhalsimclean.png" class="player_image" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="team_header_player_image">
                         <span class="team_header_name">
                             {{ teamAdditional.0.name }}
                         </span>
@@ -33,7 +22,34 @@
                         </span>
                     </td>
                 </tr>
-            <div class="clear"></div>
+                <tr>
+                    <td class="team_header_player_image">
+                        <img src="/images/Zangiefclean.png" class="player_image" />
+                    </td>
+                    <td class="team_header_vs_image">
+                        <img src="/images/vs.png" class="vs_image" />
+                    </td>
+                    <td class="team_header_player_image">
+                        <img src="/images/Dhalsimclean.png" class="player_image" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="team_header_player_image">
+                        <span class="team_header_name">
+                            {{ teamAdditional.0.score }}
+                        </span>
+                    </td>
+                    <td class="team_header_vs_image">
+                        &nbsp;
+                    </td>
+                    <td class="team_header_player_image">
+                        <span class="team_header_name">
+                            {{ teamAdditional.1.score }}
+                        </span>
+                    </td>
+                </tr>
+
+                <div class="clear"></div>
             {% for team in teams %}
                 <table class="team_table">
                     {% for row in team %}
