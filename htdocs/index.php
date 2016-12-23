@@ -9,6 +9,8 @@ $twig = new Twig_Environment($loader);
 
 $iniFile = '../config/settings.ini';
 
+header('Content-Type: text/html; charset=utf-8');
+
 try {
     $settings = GetSettings::parseIni($iniFile);
     $parser = new Parser();
@@ -18,6 +20,7 @@ try {
     foreach ($settings as $teamSettings) {
         $teams[] = $parser->parseTeam($teamSettings);
     }
+
 
     echo $twig->render('index.twig', ['teams' => $teams]);
 } catch(Exception $e) {

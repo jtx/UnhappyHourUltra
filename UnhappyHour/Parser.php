@@ -52,7 +52,7 @@ class Parser
             $columns = $players->item($i)->getElementsByTagName('td');
             /** @var DOMElement $column */
             foreach ($columns as $column) {
-                $res[$i][] = utf8_decode($column->nodeValue);
+                $res[$i][] = $column->nodeValue;
             }
         }
 
