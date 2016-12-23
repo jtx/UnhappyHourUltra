@@ -38,6 +38,14 @@ body {
 
 .team_header_scores {
     font-size: 36px;
+    color: #000;
+}
+
+.team_header_scores_winning {
+    color: green;
+}
+
+.team_header_scores_losing {
     color: red;
 }
 
