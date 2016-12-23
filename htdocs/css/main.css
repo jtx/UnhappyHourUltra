@@ -104,5 +104,10 @@ body {
     background-color: #a2d2a7;
     color: #000;
     text-transform: uppercase;
+    font-weight: bold;
     text-align: left;
+}
+
+.total_column {
+    text-align: right;
 }
