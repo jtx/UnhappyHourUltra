@@ -1,5 +1,7 @@
 <?php
 
+//fun test pr
+
 require_once('../vendor/autoload.php');
 require_once('../UnhappyHour/Parser.php');
 require_once('../UnhappyHour/GetSettings.php');
